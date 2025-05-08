@@ -1,5 +1,6 @@
 button {
     all: unset;
+    cursor: pointer;
     text-align: center;
     background-color: var(--color-brand);
     min-width: 10rem;
@@ -10,5 +11,11 @@ button {
 
     &:hover {
         background-color: var(--color-brand-hover);
+    }
+}
+
+@media (width < 43em) {
+    button {
+        min-width: auto;
     }
 }

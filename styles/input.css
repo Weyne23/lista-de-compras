@@ -8,7 +8,9 @@ input {
         border: 2px solid var(--border-hover);
     }
     
-    
+    &:focus {
+        border: 2px solid var(--color-brand);
+    }
     
 }
 
@@ -19,6 +21,14 @@ input[type="checkbox"]{
     width: 1rem;
     border-radius: 0.375rem;
     padding: 0;
+
+    &:not(:checked) {
+        border: 2px solid var(--border-primary);
+    }
+
+    &:hover {
+        border: 2px solid var(--border-hover);
+    }
     
     &:checked {
         border: 2px solid var(--color-brand);
@@ -33,14 +43,6 @@ input[type="checkbox"]{
             width: 12px;
         }
     }
-}
-
-label {
-    
-}
-
-.input-wrapper {
-    min-height: 2.75rem;
 }
 
 .box-style {

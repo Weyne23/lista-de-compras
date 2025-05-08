@@ -1,5 +1,4 @@
 form {
-    
     & fieldset {
         border: none;
         
@@ -10,8 +9,12 @@ form {
         }
 
         & ul {
+            flex-direction: column;
             margin-top: 2.5rem;
+            gap: .75rem;
             & li {
+                width: 100%;
+
                 & > div {
                     padding-inline: .75rem;
                     justify-content: space-between;
@@ -21,7 +24,39 @@ form {
                         gap: .75rem;
                     }
                 }
+
+                & span {
+                    cursor: pointer;
+                }
             }
+        }
+    }
+
+    & .alert {
+        margin-top: 2.25rem;
+        justify-content: space-between;
+        background-color: var(--color-danger);
+        padding: .75rem;
+        transition: opacity 200ms;
+        
+        & div {
+            gap: .5rem;
+            
+            & p{
+                color: var(--always-white);
+            }
+        }
+
+        & img {
+            cursor: pointer;
+        }
+    }
+}
+
+@media (width < 43em) {
+    form {
+        & #input-wrapper{
+            flex-direction: column;
         }
     }
 }

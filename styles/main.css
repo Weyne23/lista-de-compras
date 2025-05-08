@@ -9,3 +9,10 @@ main {
         padding-bottom: 1rem;
     }
 }
+
+@media (width < 43em) {
+    main {
+        margin-inline: 2rem;
+        margin-top: 2.125rem;
+    }
+}

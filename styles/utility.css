@@ -21,3 +21,17 @@
 .margin-top-25px {
     margin-top: 1.5625rem;
 }
+
+.opacity-0 {
+    opacity: 0;
+}
+
+.hight-box {
+    min-height: 2.75rem;
+}
+
+@media (width < 43em) {
+    .desktop-only {
+        display: none;
+    }
+}

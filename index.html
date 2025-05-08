@@ -18,25 +18,25 @@
         <form method="post" enctype="multipart/form-data">
             <fieldset>
                 <legend>Compras da semana</legend>
-                <div class="flex gap-1rem input-wrapper">
-                    <input type="text" placeholder="Adicione um novo item" class="box-style" id="new-item">
-                    <button type="submit">Adicionar item</button>
+                <div class="flex gap-1rem" id="input-wrapper">
+                    <input type="text" placeholder="Adicione um novo item" class="box-style  hight-box" id="new-item">
+                    <button type="submit" class=" hight-box">Adicionar item</button>
                 </div>
         
-                <ul id="buy-list" role="list">
+                <ul id="shopping-list" role="list" class="flex">
                     <li>
-                        <div class="flex align-items-center box-style input-wrapper">
-                            <div class="flex align-items-center">
-                                <input type="checkbox" name="item-compra" id="item-compra"  value="paodeforma">
-                                <label for="item-compra">Pão de forma</label>
-                            </div>
-                            <span><img src="assets/icons/Frame.svg" alt=""></span>
-                        </div>
                     </li>
                 </ul>
+                <div class="alert box-style flex align-items-center hight-box opacity-0">
+                    <div class="flex align-items-center">
+                        <img src="/assets/icons/warning-circle-filled.svg" alt="">
+                        <p>O item foi removido da lista</p>
+                    </div>
+                    <img src="/assets/icons/delete-small.svg" alt="" id="close-alert">
+                </div>
             </fieldset>
         </form>
     </main>
-    <script src="scripts.js"></script>
+    <script src="/scripts.js"></script>
 </body>
 </html>
