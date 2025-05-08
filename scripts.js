@@ -10,6 +10,8 @@ form.onsubmit = (event) => {
         return alert("Digite um item!")
 
     addNewItem(newItem.value);
+
+    newItem.value = "";
 }
 
 closeAlert.addEventListener("click", () => {
