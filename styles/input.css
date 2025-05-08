@@ -1,0 +1,50 @@
+input {
+    outline: none;
+    font-size: 1rem;
+    padding-inline: 1.125rem;
+    border: 2px solid var(--border-primary);
+    
+    &:hover {
+        border: 2px solid var(--border-hover);
+    }
+    
+    
+    
+}
+
+input[type="checkbox"]{
+    position: relative;
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 0.375rem;
+    padding: 0;
+    
+    &:checked {
+        border: 2px solid var(--color-brand);
+        background-color: var(--color-brand);
+
+        &::after {
+            position: absolute;
+            content: "";
+            inset: 0;
+            background-image: url("../assets/icons/check.svg");
+            height: 12px;
+            width: 12px;
+        }
+    }
+}
+
+label {
+    
+}
+
+.input-wrapper {
+    min-height: 2.75rem;
+}
+
+.box-style {
+    width: 100%;
+    background-color: var(--bg-color-secondary);
+    border-radius: .75rem;
+}

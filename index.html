@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="desktop-only flex justify-content-center margin-top-25px">
+        <img src="assets/logo.svg" alt="">
+    </header>
+    <main>
+        <a href="#"><- Voltar</a>
+        <form method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Compras da semana</legend>
+                <div class="flex gap-1rem input-wrapper">
+                    <input type="text" placeholder="Adicione um novo item" class="box-style" id="new-item">
+                    <button type="submit">Adicionar item</button>
+                </div>
+        
+                <ul id="buy-list" role="list">
+                    <li>
+                        <div class="flex align-items-center box-style input-wrapper">
+                            <div class="flex align-items-center">
+                                <input type="checkbox" name="item-compra" id="item-compra"  value="paodeforma">
+                                <label for="item-compra">Pão de forma</label>
+                            </div>
+                            <span><img src="assets/icons/Frame.svg" alt=""></span>
+                        </div>
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>

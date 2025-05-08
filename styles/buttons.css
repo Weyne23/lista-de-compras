@@ -1,0 +1,14 @@
+button {
+    all: unset;
+    text-align: center;
+    background-color: var(--color-brand);
+    min-width: 10rem;
+    border-radius: .75rem;
+    color: var(--always-white);
+    font-size: var(--fs-label);
+    transition: background-color 200ms ease;
+
+    &:hover {
+        background-color: var(--color-brand-hover);
+    }
+}

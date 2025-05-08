@@ -1,0 +1,11 @@
+main {
+    max-width: 39.1875rem;
+    margin-inline: auto;
+    margin-top: 3.875rem;
+
+    & a {
+        display: inline-block;
+        margin-left: 4px;
+        padding-bottom: 1rem;
+    }
+}

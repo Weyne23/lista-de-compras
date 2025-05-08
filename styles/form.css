@@ -1,0 +1,27 @@
+form {
+    
+    & fieldset {
+        border: none;
+        
+        & legend {
+            font-size: var(--fs-legend);
+            font-weight: var(--fw-bold);
+            margin-bottom: 2.75rem;
+        }
+
+        & ul {
+            margin-top: 2.5rem;
+            & li {
+                & > div {
+                    padding-inline: .75rem;
+                    justify-content: space-between;
+                    height: 3.0625rem;
+
+                    & div {
+                        gap: .75rem;
+                    }
+                }
+            }
+        }
+    }
+}
